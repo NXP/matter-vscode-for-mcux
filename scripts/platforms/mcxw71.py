@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-#    Copyright 2024 NXP
+#    Copyright 2024-2025 NXP
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ from .utils.platform import Platform
 from .utils.tools import BlHost
 
 # This assumes that the matter-vscode-for-mcux repo is cloned in Matter root path.
-nbu_path = os.path.abspath(os.path.join(COMMON_SDK, "middleware/wireless/ieee-802.15.4/bin/mcxw71/mcxw71_nbu_ble_15_4_dyn_matter_1_0_17_2.sb3"))
+nbu_path = os.path.abspath(os.path.join(COMMON_SDK, "middleware/wireless/ieee-802.15.4/bin/k32w1_mcxw71/k32w1_mcxw71_nbu_ble_15_4_dyn_matter.sb3"))
 
 class MCXW71(Platform):
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-#    Copyright 2024 NXP
+#    Copyright 2024-2025 NXP
 #
 #    Licensed under the Apache License, Version 2.0 (the "License");
 #    you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import sys
 
 MATTER_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../../"))
 K32W0_SDK = os.path.abspath(os.path.join(MATTER_ROOT, "third_party/nxp/nxp_matter_support/github_sdk/k32w0/repo"))
-COMMON_SDK = os.path.abspath(os.path.join(MATTER_ROOT, "third_party/nxp/nxp_matter_support/github_sdk/common_sdk/repo"))
+COMMON_SDK = os.path.abspath(os.path.join(MATTER_ROOT, "third_party/nxp/nxp_matter_support/github_sdk/sdk_next/repo"))
 
 class Platform:
     """Defines a common API for pre flash actions for different platforms."""

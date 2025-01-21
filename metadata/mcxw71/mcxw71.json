@@ -1,8 +1,8 @@
 {
     "name": "mcxw71",
     "description": "Metadata for mcxw71 support in Matter",
-    "sdkVersion": "2.16.0",
-    "sdkWestManifest": "third_party/nxp/nxp_matter_support/github_sdk/common_sdk/manifest/west.yml",
+    "sdkVersion": "3.0",
+    "sdkWestManifest": "third_party/nxp/nxp_matter_support/github_sdk/sdk_next/manifest/west.yml",
     "sdkEnvironmentVariable": "NXP_SDK_ROOT",
     "boards": [
         {
@@ -11,7 +11,7 @@
             "image": "images/frdm-mcxw71.png",
             "url": "https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/mcx-arm-cortex-m/mcx-w-series-microcontrollers/mcx-w71x-secure-and-ultra-low-power-mcus-for-matter-thread-zigbee-and-bluetooth-le:MCX-W71X",
             "probeTarget": {
-                "LinkServer": "MCXW716CxxxA:FRDM-MCXW71",
+                "LinkServer": "MCXW716C:FRDM-MCXW71",
                 "SEGGER": "MCXW71"
             },
             "userVisible": true
