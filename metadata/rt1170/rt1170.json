@@ -6,17 +6,6 @@
     "sdkEnvironmentVariable": "NXP_SDK_ROOT",
     "boards": [
         {
-            "name": "MIMXRT1170-EVK",
-            "description": "i.MX RT1170: 1 GHz Crossover MCU with Arm® Cortex® Cores",
-            "image": "images/mimxrt1170-evk.png",
-            "url": "https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1170-1-ghz-crossover-mcu-with-arm-cortex-cores:i.MX-RT1170",
-            "probeTarget": {
-                "LinkServer": "MIMXRT1176xxxxx:MIMXRT1170-EVK",
-                "SEGGER": "MIMXRT1176xxxA_M7"
-            },
-            "userVisible": false
-        },
-        {
             "name": "MIMXRT1170-EVKB",
             "description": "i.MX RT1170: 1 GHz Crossover MCU with Arm® Cortex® Cores",
             "image": "images/mimxrt1170-evkb.png",
@@ -25,24 +14,25 @@
                 "LinkServer": "MIMXRT1176xxxxx:MIMXRT1170-EVKB",
                 "SEGGER": "MIMXRT1176xxxA_M7"
             },
-            "userVisible": false
+            "userVisible": true
         }
     ],
     "apps": [
         {
             "name": "all-clusters-app",
             "deviceType": "All Clusters",
-            "targets": {}
-        },
-        {
-            "name": "laundry-washer-app",
-            "deviceType": "Laundry Washer",
-            "targets": {}
+            "targets": {
+                "nxp-rt1170-freertos-all-clusters-wifi-iwx12": "MIMXRT1170-EVKB + IW612 All cluster app with Matter over Wi-Fi (with BLE for commissioning)",
+                "nxp-rt1170-freertos-all-clusters-thread-iwx12": "MIMXRT1170-EVKB + IW612 All cluster app with Matter over Thread (with BLE for commissioning)"
+            }
         },
         {
             "name": "thermostat",
             "deviceType": "Thermostat",
-            "targets": {}
+            "targets": {
+                "nxp-rt1170-freertos-thermostat-wifi-iwx12": "MIMXRT1170-EVKC + IW612 Thermostat app with Matter over Wi-Fi (with BLE for commissioning)",
+                "nxp-rt1170-freertos-thermostat-thread-iwx12": "MIMXRT1170-EVKC + IW612 Thermostat app with Matter over Thread (with BLE for commissioning)"
+            }
         }
     ],
     "debugConfig": {

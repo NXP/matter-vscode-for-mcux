@@ -6,17 +6,6 @@
     "sdkEnvironmentVariable": "NXP_SDK_ROOT",
     "boards": [
         {
-            "name": "RD-RW612-BGA",
-            "description": "Wireless MCU with Integrated Tri-radio: 1x1 Wi-Fi® 6 + Bluetooth® Low Energy 5.4 / 802.15.4",
-            "image": "images/rdrw612bga.png",
-            "url": "https://www.nxp.com/products/wireless-connectivity/wi-fi-plus-bluetooth-plus-802-15-4/wireless-mcu-with-integrated-tri-radio-1x1-wi-fi-6-plus-bluetooth-low-energy-5-4-802-15-4:RW612",
-            "probeTarget": {
-                "LinkServer": "RW612:RD-RW612-BGA",
-                "SEGGER": "RW612"
-            },
-            "userVisible": true
-        },
-        {
             "name": "FRDM-RW612",
             "description": "Wireless MCU with Integrated Tri-radio: 1x1 Wi-Fi® 6 + Bluetooth® Low Energy 5.4 / 802.15.4",
             "image": "images/frdm-rw612.png",
@@ -25,91 +14,25 @@
                 "LinkServer": "RW612:FRDM-RW612",
                 "SEGGER": "RW612"
             },
-            "userVisible": false
+            "userVisible": true
         }
     ],
     "apps": [
         {
-            "name": "air-quality-sensor-app",
-            "deviceType": "Air Quality Sensor",
-            "targets": {}
-        },
-        {
             "name": "all-clusters-app",
             "deviceType": "All Clusters",
             "targets": {
-                "nxp-rw61x-freertos-all-clusters-wifi": "All clusters app over Wi-Fi",
-                "nxp-rw61x-freertos-all-clusters-thread": "All clusters app over OpenThread",
-                "nxp-rw61x-freertos-all-clusters-thread-wifi": "All clusters app over Wi-Fi with OpenThread Border Router support"
+                "nxp-rw61x-freertos-all-clusters-wifi-frdm": "FRDM-RW612 All cluster app with Matter over Wi-Fi (with BLE for commissioning)",
+                "nxp-rw61x-freertos-all-clusters-thread-frdm": "FRDM-RW612 All cluster app with Matter over Thread (with BLE for commissioning)"
             }
-        },
-        {
-            "name": "cooktop-app",
-            "deviceType": "Cooktop",
-            "targets": {}
-        },
-        {
-            "name": "cooksurface-app",
-            "deviceType": "Cook Surface",
-            "targets": {}
-        },
-        {
-            "name": "laundry-washer-app",
-            "deviceType": "Laundry Washer",
-            "targets": {
-                "nxp-rw61x-freertos-laundry-washer-wifi": "Laundry washer over Wi-Fi",
-                "nxp-rw61x-freertos-laundry-washer-thread": "Laundry washerover OpenThread",
-                "nxp-rw61x-freertos-laundry-washer-thread-wifi": "Laundry washer over Wi-Fi with OpenThread Border Router support"
-            }
-        },
-        {
-            "name": "light-switch-app",
-            "deviceType": "On/Off Light Switch",
-            "targets": {}
-        },
-        {
-            "name": "lock-app",
-            "deviceType": "Door Lock",
-            "targets": {}
-        },
-        {
-            "name": "onoff-plugin-unit-app",
-            "deviceType": "On/Off Plug-in Unit",
-            "targets": {}
-        },
-        {
-            "name": "pump-app",
-            "deviceType": "Pump",
-            "targets": {}
-        },
-        {
-            "name": "room-air-conditioner-app",
-            "deviceType": "Room Air Conditioner",
-            "targets": {}
-        },
-        {
-            "name": "smoke-co-alarm-app",
-            "deviceType": "Smoke CO Alarm",
-            "targets": {}
-        },
-        {
-            "name": "temperature-measurement-app",
-            "deviceType": "Temperature Sensor",
-            "targets": {}
         },
         {
             "name": "thermostat",
             "deviceType": "Thermostat",
             "targets": {
-                "nxp-rw61x-freertos-thermostat-wifi": "Thermostat over WiFi",
-                "nxp-rw61x-freertos-thermostat-thread": "Thermostat over OpenThread",
-                "nxp-rw61x-freertos-thermostat-thread-wifi": "Thermostat over Wi-Fi with OpenThread Border Router support"
+                "nxp-rw61x-freertos-thermostat-wifi-frdm": "FRDM-RW612 Thermostat app with Matter over Wi-Fi (with BLE for commissioning)",
+                "nxp-rw61x-freertos-thermostat-thread-frdm": "FRDM-RW612 Thermostat app with Matter over Thread (with BLE for commissioning)"
             }
-        },
-        {
-            "name": "window-app",
-            "deviceType": "Window Covering",
-            "targets": {}
         }
     ],
     "debugConfig": {
