@@ -22,8 +22,4 @@ class RT1060(Platform):
 
     def __init__(self, board=None):
         super().__init__()
-
-        self.tool = BlHost()
-        self.tool.add_action(["flash-erase-region", "0x607df000", "8192"])
-        self.tool.add_action(["write-memory", "0x607df000", self.get_binary("example-factory-data.bin"), "8192"])
-        self.tool.add_action(["reset"])
+        print("Error preflash action not supported")
