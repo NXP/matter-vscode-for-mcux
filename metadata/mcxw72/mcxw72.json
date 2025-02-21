@@ -14,7 +14,7 @@
                 "LinkServer": "MCXW727C:FRDM-MCXW72",
                 "SEGGER": "MCXW72"
             },
-            "userVisible": true
+            "userVisible": false
         },
         {
             "name": "MCXW72EVK",
@@ -25,7 +25,7 @@
                 "LinkServer": "MCXW727C:MCX-W72-EVK",
                 "SEGGER": "MCXW72"
             },
-            "userVisible": true
+            "userVisible": false
         }
     ],
     "apps": [
