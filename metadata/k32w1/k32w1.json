@@ -14,7 +14,7 @@
                 "LinkServer": "K32W1480xxxA:K32W148-EVK",
                 "SEGGER": "K32W1480"
             },
-            "userVisible": true
+            "userVisible": false
         }
     ],
     "apps": [
