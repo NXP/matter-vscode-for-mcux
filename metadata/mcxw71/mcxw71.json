@@ -12,7 +12,7 @@
             "url": "https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/mcx-arm-cortex-m/mcx-w-series-microcontrollers/mcx-w71x-secure-and-ultra-low-power-mcus-for-matter-thread-zigbee-and-bluetooth-le:MCX-W71X",
             "probeTarget": {
                 "LinkServer": "MCXW716C:FRDM-MCXW71",
-                "SEGGER": "MCXW71"
+                "SEGGER": "MCXW716"
             },
             "userVisible": true
         }
