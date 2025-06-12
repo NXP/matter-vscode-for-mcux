@@ -17,8 +17,6 @@
 
 import click
 
-from platforms.k32w0 import K32W0
-from platforms.k32w1 import K32W1
 from platforms.mcxw71 import MCXW71
 from platforms.mcxw72 import MCXW72
 from platforms.rt1060 import RT1060
@@ -26,8 +24,6 @@ from platforms.rt1170 import RT1170
 from platforms.rw61x import RW61X
 
 PLATFORMS = {
-    "k32w0": K32W0,
-    "k32w1": K32W1,
     "mcxw71": MCXW71,
     "mcxw72": MCXW72,
     "rt1060": RT1060,

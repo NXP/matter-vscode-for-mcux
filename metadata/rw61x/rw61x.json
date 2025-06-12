@@ -3,56 +3,38 @@
     "description": "Metadata for rw61x support in Matter",
     "sdkVersion": "3.0",
     "sdkWestManifest": "third_party/nxp/nxp_matter_support/github_sdk/sdk_next/manifest/west.yml",
-    "sdkEnvironmentVariable": "NXP_SDK_ROOT",
     "boards": [
         {
-            "name": "FRDM-RW612",
+            "name": "frdmrw612",
             "description": "Wireless MCU with Integrated Tri-radio: 1x1 Wi-Fi® 6 + Bluetooth® Low Energy 5.4 / 802.15.4",
             "image": "images/frdm-rw612.png",
             "url": "https://www.nxp.com/products/wireless-connectivity/wi-fi-plus-bluetooth-plus-802-15-4/wireless-mcu-with-integrated-tri-radio-1x1-wi-fi-6-plus-bluetooth-low-energy-5-4-802-15-4:RW612",
-            "probeTarget": {
-                "LinkServer": "RW612:FRDM-RW612",
-                "SEGGER": "RW612"
-            },
             "userVisible": true
         }
     ],
     "apps": [
-        {
-            "name": "all-clusters-app",
-            "deviceType": "All Clusters",
-            "targets": {
-                "nxp-rw61x-freertos-all-clusters-wifi-frdm": "FRDM-RW612 All cluster app with Matter over Wi-Fi (with BLE for commissioning)",
-                "nxp-rw61x-freertos-all-clusters-thread-frdm": "FRDM-RW612 All cluster app with Matter over Thread (with BLE for commissioning)"
-            }
-        },
-        {
-            "name": "thermostat",
-            "deviceType": "Thermostat",
-            "targets": {
-                "nxp-rw61x-freertos-thermostat-wifi-frdm": "FRDM-RW612 Thermostat app with Matter over Wi-Fi (with BLE for commissioning)",
-                "nxp-rw61x-freertos-thermostat-thread-frdm": "FRDM-RW612 Thermostat app with Matter over Thread (with BLE for commissioning)"
-            }
-        }
-    ],
-    "debugConfig": {
-        "loadAddress": "0x8020000",
-        "probes": {
-            "LinkServer": {
-                "interface": "swd",
-                "initCommands": []
-            },
-            "SEGGER": {
-                "interface": "swd",
-                "speed": "4000",
-                "initCommands": []
-            }
-        },
-        "preFlashActions": [
-            {
-                "description": "Run pre flash actions",
-                "command": "scripts/flash_utils.py --platform rw61x"
-            }
-        ]
-    }
+        { "name": "thermostat" },
+        { "name": "air-purifier-app" },
+        { "name": "air-quality-sensor-app" },
+        { "name": "all-clusters-app" },
+        { "name": "color-temperature-light" },
+        { "name": "cooksurface-app" },
+        { "name": "cooktop-app" },
+        { "name": "dishwasher-app" },
+        { "name": "laundry-dryer-app" },
+        { "name": "laundry-washer-app" },
+        { "name": "light-switch-app" },
+        { "name": "light-switch-combo-app" },
+        { "name": "lock-app" },
+        { "name": "microwave-oven-app" },
+        { "name": "occupancy-sensor-app" },
+        { "name": "onoff-plugin-unit-app" },
+        { "name": "pump-app" },
+        { "name": "refrigerator-app" },
+        { "name": "room-air-conditioner-app" },
+        { "name": "rvc-app" },
+        { "name": "smoke-co-alarm-app" },
+        { "name": "temperature-measurement-app" },
+        { "name": "window-app" }
+    ]
 }

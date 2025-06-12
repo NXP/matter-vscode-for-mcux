@@ -3,56 +3,30 @@
     "description": "Metadata for rt1170 support in Matter",
     "sdkVersion": "3.0",
     "sdkWestManifest": "third_party/nxp/nxp_matter_support/github_sdk/sdk_next/manifest/west.yml",
-    "sdkEnvironmentVariable": "NXP_SDK_ROOT",
     "boards": [
         {
-            "name": "MIMXRT1170-EVKB",
+            "name": "evkbmimxrt1170",
             "description": "i.MX RT1170: 1 GHz Crossover MCU with Arm® Cortex® Cores",
             "image": "images/mimxrt1170-evkb.png",
             "url": "https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/i-mx-rt-crossover-mcus/i-mx-rt1170-1-ghz-crossover-mcu-with-arm-cortex-cores:i.MX-RT1170",
-            "probeTarget": {
-                "LinkServer": "MIMXRT1176xxxxx:MIMXRT1170-EVKB",
-                "SEGGER": "MIMXRT1176xxxA_M7"
-            },
+            "core_id": "cm7",
             "userVisible": true
         }
     ],
     "apps": [
-        {
-            "name": "all-clusters-app",
-            "deviceType": "All Clusters",
-            "targets": {
-                "nxp-rt1170-freertos-all-clusters-wifi-iwx12": "MIMXRT1170-EVKB + IW612 All cluster app with Matter over Wi-Fi (with BLE for commissioning)",
-                "nxp-rt1170-freertos-all-clusters-thread-iwx12": "MIMXRT1170-EVKB + IW612 All cluster app with Matter over Thread (with BLE for commissioning)"
-            }
-        },
-        {
-            "name": "thermostat",
-            "deviceType": "Thermostat",
-            "targets": {
-                "nxp-rt1170-freertos-thermostat-wifi-iwx12": "MIMXRT1170-EVKC + IW612 Thermostat app with Matter over Wi-Fi (with BLE for commissioning)",
-                "nxp-rt1170-freertos-thermostat-thread-iwx12": "MIMXRT1170-EVKC + IW612 Thermostat app with Matter over Thread (with BLE for commissioning)"
-            }
-        }
-    ],
-    "debugConfig": {
-        "loadAddress": "0x30040000",
-        "probes": {
-            "LinkServer": {
-                "interface": "swd",
-                "initCommands": []
-            },
-            "SEGGER": {
-                "interface": "swd",
-                "speed": "4000",
-                "initCommands": []
-            }
-        },
-        "preFlashActions": [
-            {
-                "description": "Run pre flash actions",
-                "command": "scripts/flash_utils.py --platform rt1170"
-            }
-        ]
-    }
+        { "name": "thermostat" },
+        { "name": "air-quality-sensor-app" },
+        { "name": "all-clusters-app" },
+        { "name": "cooksurface-app" },
+        { "name": "cooktop-app" },
+        { "name": "laundry-dryer-app" },
+        { "name": "laundry-washer-app" },
+        { "name": "light-switch-app" },
+        { "name": "lock-app" },
+        { "name": "pump-app" },
+        { "name": "room-air-conditioner-app" },
+        { "name": "smoke-co-alarm-app" },
+        { "name": "temperature-measurement-app" },
+        { "name": "window-app" }
+    ]
 }

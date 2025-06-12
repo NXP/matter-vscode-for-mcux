@@ -3,66 +3,17 @@
     "description": "Metadata for mcxw71 support in Matter",
     "sdkVersion": "3.0",
     "sdkWestManifest": "third_party/nxp/nxp_matter_support/github_sdk/sdk_next/manifest/west.yml",
-    "sdkEnvironmentVariable": "NXP_SDK_ROOT",
     "boards": [
         {
-            "name": "FRDM-MCXW71",
+            "name": "frdmmcxw71",
             "description": "Secure and Ultra-Low-Power MCU for Matter Over Thread™ and Bluetooth® LE 5.3",
             "image": "images/frdm-mcxw71.png",
             "url": "https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/mcx-arm-cortex-m/mcx-w-series-microcontrollers/mcx-w71x-secure-and-ultra-low-power-mcus-for-matter-thread-zigbee-and-bluetooth-le:MCX-W71X",
-            "probeTarget": {
-                "LinkServer": "MCXW716C:FRDM-MCXW71",
-                "SEGGER": "MCXW716"
-            },
             "userVisible": true
         }
     ],
     "apps": [
-        {
-            "name": "lighting-app",
-            "deviceType": "On/Off Light",
-            "targets": {
-                "nxp-mcxw71-freertos-lighting": "Lighting app",
-                "nxp-mcxw71-freertos-lighting-factory": "Lighting app with factory data",
-                "nxp-mcxw71-freertos-lighting-rotating-id": "Lighting app with rotating device id",
-                "nxp-mcxw71-freertos-lighting-smu2": "Lighting app with SMU2",
-                "nxp-mcxw71-freertos-lighting-smu2-factory": "Lighting app with SMU2 and factory data",
-                "nxp-mcxw71-freertos-lighting-sw-v2": "Lighting app (OTA)",
-                "nxp-mcxw71-freertos-lighting-smu2-sw-v2": "Lighting app with SMU2 (OTA)",
-                "nxp-mcxw71-freertos-lighting-factory-sw-v2": "Lighting app with factory data (OTA)",
-                "nxp-mcxw71-freertos-lighting-smu2-factory-sw-v2": "Lighting app with SMU2 and factory data (OTA)"
-            }
-        },
-        {
-            "name": "contact-sensor-app",
-            "deviceType": "Contact Sensor",
-            "targets": {
-                "nxp-mcxw71-freertos-contact-sensor-low-power": "Low power contact sensor app",
-                "nxp-mcxw71-freertos-contact-sensor-low-power-factory": "Low power contact sensor app with factory data",
-                "nxp-mcxw71-freertos-contact-sensor-low-power-lit": "Low power contact sensor app (LIT)",
-                "nxp-mcxw71-freertos-contact-sensor-low-power-sw-v2": "Low power contact sensor app (OTA)",
-                "nxp-mcxw71-freertos-contact-sensor-low-power-factory-sw-v2": "Low power contact sensor app with factory data (OTA)"
-            }
-        }
-    ],
-    "debugConfig": {
-        "loadAddress": "0",
-        "probes": {
-            "LinkServer": {
-                "interface": "swd",
-                "initCommands": []
-            },
-            "SEGGER": {
-                "interface": "swd",
-                "speed": "4000",
-                "initCommands": []
-            }
-        },
-        "preFlashActions": [
-            {
-                "description": "Run pre flash actions (load NBU, load factory data)",
-                "command": "scripts/flash_utils.py --platform mcxw71"
-            }
-        ]
-    }
+        { "name": "lighting-app" },
+        { "name": "contact-sensor-app" }
+    ]
 }
