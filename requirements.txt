@@ -1,2 +1,0 @@
-spsdk==2.2.1
-spsdk[dk6]
