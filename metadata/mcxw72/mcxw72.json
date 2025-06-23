@@ -10,7 +10,7 @@
             "image": "images/frdm-mcxw72.png",
             "url": "https://www.nxp.com/products/MCX-W72X",
             "core_id": "cm33_core0",
-            "userVisible": false
+            "userVisible": true
         }
     ],
     "apps": [
